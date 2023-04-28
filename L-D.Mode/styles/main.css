@@ -1,0 +1,87 @@
+.mainBox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: black;
+}
+
+.gridColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50rem;
+    background-color: bisque;
+    border: 1px solid red;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 12rem;
+    width: 30rem;
+    background-color: black;
+    border-radius: 6rem;
+
+}
+
+
+.background{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 11rem;
+    width: 29rem;
+    border-radius: 5.5rem;
+    border: 2px solid white;
+    transition: background-image 1.3s ease;
+    
+}
+
+.lightBackGr{
+    background-image:url("/L-D.Mode/media/pixelSky.jpg");
+    background-size:80%;
+
+}
+.darkBackGr{
+    background-image:url("/L-D.Mode/media/NightPixelSky.jpg");
+    background-size:140%;
+}
+
+
+.sphere{
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50%;
+    transition: transform 1.5s ease-out;
+}
+.changeToDarkAnim{
+    animation: changeModeToDark 1.5s ease-out;
+    animation-fill-mode: forwards;
+}
+.changeToLightAnim{
+    animation: changeModeToLight 1.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.lightMode{
+    background-image: radial-gradient(circle at 100% 100%, rgb(231, 194, 29) 50%, rgba(255, 255, 255, 0.2) 100%);
+
+    filter: blur(1.5px);
+    transform: translate(-8rem);
+
+}
+.darkMode{
+        background-image: radial-gradient(circle at 100% 100%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 100%);
+        transform: translate(8rem);
+
+}
+
+
+
+
+
+
+  
